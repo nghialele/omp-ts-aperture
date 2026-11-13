@@ -1,0 +1,5 @@
+node_modules/
+dist/
+
+# Local oh-my-pi checkout used as reference while developing this port.
+oh-my-pi/

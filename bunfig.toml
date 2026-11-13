@@ -1,0 +1,6 @@
+[test]
+# Unit tests import the real extension, which reaches pi-ai and
+# pi-coding-agent and therefore the Rust `pi_natives` addon. The preload swaps
+# in an inert stand-in so the suite runs on a checkout without a built addon;
+# a real omp session never loads this file.
+preload = ["./test-support/preload.ts"]
